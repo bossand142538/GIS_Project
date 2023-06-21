@@ -1,0 +1,46 @@
+﻿@page
+@model GisRazorPage.Pages.ExportExcelModel
+@{
+    
+}
+<h1>Download Excel Query</h1>
+<div>
+    <form method="POST">
+        <button type="submit" asp-page-handler="DownloadFileA4">Download ข้อ 4A</button>
+        <button type="submit" asp-page-handler="DownloadFileB4">Download ข้อ 4B</button>
+        
+    </form>
+    <br>
+    <br>
+    <hr />
+    <p>โปรดใส่ข้อมูล country</p>
+    <form method="POST">
+        <div class="mb-3">
+                <label class="form-label">country </label>
+                <input class="form-control" name="country">
+            </div>
+        <button type="submit" asp-page-handler="DownloadFileC4">Download ข้อ 4C</button>
+    </form>
+    <hr />
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr />
+    <p>โปรดใส่ข้อมูล country และ Year</p>
+    <form method="POST">
+        <div class="mb-3">
+                <label class="form-label">color </label>
+                <input class="form-control" name="color">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Year </label>
+                <input class="form-control" name="Year">
+            </div>
+        <button type="submit" asp-page-handler="DownloadFileD4">Download ข้อ 4D</button>
+    </form>
+    <hr />
+    <br>
+    <br>
+</div>
+

@@ -1,0 +1,21 @@
+﻿@page
+@model GisRazorPage.Pages.AddDataModel
+@{
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Upload Excel File To Server</h1>
+    <hr />
+    <form method="POST" enctype="multipart/form-data">
+        <input id="File1" type="file" asp-for="Uploadfiles" />
+        <input id="Submit1" type="submit" value="Upload File ..." class="btn-success" />
+        <hr />
+    </form>
+    <p>เมื่ออัพโหลดไฟล์เสร็จ จะแสดงข้อความ</p>
+    <b>@ViewData["Message"]</b>
+
+</div>
+
+
+
